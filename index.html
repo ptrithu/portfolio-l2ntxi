@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Content Designer with product thinking background" />
+  <title>Harish — Kalyan</title>
+  <style>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: #09090b;
+  color: #e4e4e7;
+  line-height: 1.7;
+}
+a { color: #a78bfa; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+header, main, footer { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+section { padding: 64px 0; border-top: 1px solid #27272a; }
+section:first-of-type { border-top: none; }
+
+header { padding-top: 80px; padding-bottom: 60px; }
+.role { font-size: 13px; font-weight: 600; color: #a78bfa; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 16px; }
+h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 800; letter-spacing: -.03em; line-height: 1.1; color: #fafafa; margin-bottom: 24px; }
+.bio { font-size: 1.1rem; color: #a1a1aa; max-width: 560px; }
+
+nav { display: flex; gap: 24px; margin-top: 32px; }
+nav a { font-size: 14px; font-weight: 500; color: #71717a; transition: color .2s; }
+nav a:hover { color: #e4e4e7; text-decoration: none; }
+
+h2 { font-size: 1.6rem; font-weight: 700; letter-spacing: -.02em; color: #fafafa; margin-bottom: 32px; }
+
+.about-text { font-size: 1.0625rem; color: #a1a1aa; max-width: 620px; }
+
+.projects-grid { display: grid; gap: 20px; }
+.project-card {
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 12px;
+  padding: 28px;
+  transition: border-color .2s;
+}
+.project-card:hover { border-color: #7c3aed; }
+.project-card h3 { font-size: 1.1rem; font-weight: 700; color: #fafafa; margin-bottom: 16px; }
+.project-meta { display: grid; gap: 10px; }
+.meta-row { display: flex; gap: 8px; }
+.meta-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #7c3aed; min-width: 72px; padding-top: 2px; }
+.meta-value { font-size: .9375rem; color: #a1a1aa; }
+
+.contact-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #7c3aed; color: #ffffff;
+  padding: 12px 28px; border-radius: 8px; font-weight: 600; font-size: 15px;
+  transition: background .2s;
+}
+.contact-link:hover { background: #6d28d9; text-decoration: none; }
+
+footer { padding: 32px 24px; text-align: center; border-top: 1px solid #27272a; }
+footer p { font-size: 13px; color: #52525b; }
+
+@media (max-width: 600px) {
+  header, section { padding-left: 16px; padding-right: 16px; }
+  h1 { font-size: 2rem; }
+}</style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header id="home">
+    <p class="role">Kalyan</p>
+    <h1>Harish</h1>
+    <p class="bio">Content Designer with product thinking background</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    
+
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p class="about-text">Content Designer with product thinking background</p>
+    </section>
+
+    
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        
+      <div class="project-card">
+        <h3>Driving secure adoption for Postman Vault</h3>
+        <div class="project-meta">
+          <div class="meta-row">
+            <span class="meta-label">Problem</span>
+            <span class="meta-value">Many Postman users, especially those in healthcare and financial services, raised concerns about secrets (API keys, tokens) being stored in Postman. Their primary concern was data security—they did not want PII (Personally Identifiable Information) or PHI (Protected Health Information) stored in Postman&#x27;s cloud.<br/><br/>No secure, local way to store sensitive credentials within Postman.<br/>Existing workarounds involved external vaults, which disrupted the workflow.<br/>Developers needed a trusted yet seamless solution.<br/></span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Approach</span>
+            <span class="meta-value">After evaluating these options, we realized that a built-in local vault provided the best balance of security, usability, and performance.<br/><br/>Local-first approach: Secrets are stored on the user&#x27;s local hard drive but remain fully encrypted. Every time a user accesses a secret, it&#x27;s decrypted on demand through Postman.<br/>Cross-workspace usability: Vault secrets work across all Postman workspaces without syncing to the cloud.<br/>Seamless developer experience: Users can store and reference secrets directly within Postman—without external dependencies.<br/>Familiar and intuitive: The experience feels native to Postman, requiring minimal learning.<br/></span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Outcome</span>
+            <span class="meta-value">30K+ users adopted Vault (created at least 3 secrets) within the first three months.<br/>23% increase in click-through rate after refining first-touch messaging.<br/>7% higher return visits after replacing the toast with a popover with a pointer.<br/></span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <p style="margin-bottom:24px;color:#9d9ab8;">
+        I&apos;m open to new opportunities. Feel free to reach out.
+      </p>
+      <a class="contact-link" href="mailto:ptrithu+cust01@gmail.com">
+        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+        </svg>
+        ptrithu+cust01@gmail.com
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with Portfolio&nbsp;60s &mdash; Generated 2026</p>
+  </footer>
+
+</body>
+</html>
